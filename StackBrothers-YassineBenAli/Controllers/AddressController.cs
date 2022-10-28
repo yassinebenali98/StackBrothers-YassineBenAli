@@ -27,7 +27,7 @@ namespace StackBrothers_YassineBenAli.Controllers
             _addressContext = addressContext;
         }
 
-        [HttpGet("addresses")]
+        [HttpGet("")]
         public ActionResult<List<Address>> Getstrings([FromQuery] string? filter, [FromQuery] string? orderBy, [FromQuery] string? order)
         {
             var adrs = _addressContext.Addresses.ToList();
